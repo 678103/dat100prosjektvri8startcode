@@ -30,8 +30,8 @@ public class Spill {
 	
 	public Spill() {
 		
-		nord = new Spiller(Spillere.NORD);
-	    syd = new Spiller(Spillere.SYD);
+		nord = new NordSpiller(Spillere.NORD);
+	    syd = new SydSpiller(Spillere.SYD);
 	    bord = new Bord();
 	
 	}
@@ -133,6 +133,7 @@ public class Spill {
 	    } else {
 	        return new Handling(HandlingsType.FORBI, null);
 	    }
+		return null;
 		
 	}
 

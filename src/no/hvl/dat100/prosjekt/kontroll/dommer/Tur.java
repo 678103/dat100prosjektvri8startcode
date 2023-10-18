@@ -2,6 +2,7 @@ package no.hvl.dat100.prosjekt.kontroll.dommer;
 
 import java.util.Random;
 
+import no.hvl.dat100.prosjekt.kontroll.ISpiller;
 import no.hvl.dat100.prosjekt.kontroll.Spiller;
 import no.hvl.dat100.prosjekt.kontroll.spill.Spillere;
 
@@ -52,7 +53,7 @@ public class Tur {
 		
 	}
 
-	public static boolean erTur(Spiller spiller) {
+	public static boolean erTur(ISpiller spiller) {
 		
 		return (spiller.hvem() == aktiv);
 		
